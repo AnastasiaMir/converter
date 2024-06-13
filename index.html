@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Currency converter</title>
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="row">
+      <aside class="col-3 pt-3 min-vh-100">
+        <nav class="list-group" id="main-content-list" role="tablist">
+          <button
+            class="list-group-item active"
+            id="converter"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-converter">
+            Конвертер валют
+        </button>
+          <button
+            class="list-group-item"
+            id="rates"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-rates">
+            Курсы валют
+      </button>
+        </nav>
+      </aside>
+      <main class="col-9 pt-3 px-5 border-start">
+        <div class="card shadow tab-content mt-4" id="nav-mainContent">
+          <div
+            class="card-body tab-pane fade active show"
+            id="div-converter">
+              <h1 class="display-3 fw-bold">Конвертер</h1>
+                <div class="row align-items-center">
+                  <form action="" class="converter-form text-body">
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating">
+                          <input id="text-input" autofocus required name="text" class="form-control w-100" placeholder="пример: 15 rub in usd" >
+                          <label for="text-input">пример: 15 rub in usd</label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                          <button type="submit" aria-label="add" class="h-100 btn btn-lg btn-primary px-sm-5">Результат</button>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="mb-3 align-items-center">
+                      <h3 class="feedback m-10 text-success"></h3>
+                    </div> 
+                </div>
+
+          </div>
+          <div
+            class="card-body tab-pane fade"
+            id="div-rates">
+            <h1 class="display-3 fw-bold">Курсы</h1>
+            <div class="w-50">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                </select>
+            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Currency</th>
+                  <th scope="col">Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <th scope="row">USD</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">EUR</th>
+                  <td></td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+          </div>
+          
+        </div>
+        
+      </main>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
